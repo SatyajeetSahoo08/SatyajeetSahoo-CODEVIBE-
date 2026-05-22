@@ -105,6 +105,24 @@ const CLesson = () => {
           <span className="start-btn">Start Lesson</span>
           {isDone('c-lesson-14') && <span style={{ marginLeft: 8 }}>✅</span>}
         </Link>
+
+        <Link to="/CLesson15" className="course-box">
+          <h3>Lesson15: File Handling in C</h3>
+          <span className="start-btn">Start Lesson</span>
+          {isDone('c-lesson-15') && <span style={{ marginLeft: 8 }}>✅</span>}
+        </Link>
+
+        <Link to="/CLesson16" className="course-box">
+          <h3>Lesson16: Mini Project 1 - Calculator</h3>
+          <span className="start-btn">Start Lesson</span>
+          {isDone('c-lesson-16') && <span style={{ marginLeft: 8 }}>✅</span>}
+        </Link>
+
+        <Link to="/CLesson17" className="course-box">
+          <h3>Lesson17: Mini Project 2 - Student Management System</h3>
+          <span className="start-btn">Start Lesson</span>
+          {isDone('c-lesson-17') && <span style={{ marginLeft: 8 }}>✅</span>}
+        </Link>
       </div>
     </div>
   );

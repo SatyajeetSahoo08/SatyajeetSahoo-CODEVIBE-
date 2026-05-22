@@ -108,6 +108,13 @@ const CssLesson = () => {
           <span className="start-btn">Start Lesson</span>
           {isDone('css-lesson-13') && <span> ✅</span>}
         </Link>
+        
+
+               <Link to="/CssLesson14" className="course-box">
+          <h3>Lesson14: Shopping Site Styling</h3>
+          <span className="start-btn">Start Lesson</span>
+          {isDone('css-lesson-14') && <span> ✅</span>}
+        </Link>
       </div>
     </div>
   );

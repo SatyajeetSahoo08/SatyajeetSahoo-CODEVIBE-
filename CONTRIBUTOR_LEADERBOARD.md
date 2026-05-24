@@ -31,9 +31,9 @@ Last updated: 2026-05-24
 | 15 | [@indresh404](https://github.com/indresh404) | 27 | 6 | 1 | 1 |
 | 16 | [@ArshiBansal](https://github.com/ArshiBansal) | 26 | 3 | 1 | 2 |
 | 17 | [@shreyamevada6](https://github.com/shreyamevada6) | 26 | 3 | 1 | 2 |
-| 18 | [@Mudita-Singh](https://github.com/Mudita-Singh) | 22 | 1 | 1 | 2 |
-| 19 | [@pratiyushraj007-Dev](https://github.com/pratiyushraj007-Dev) | 21 | 3 | 1 | 1 |
-| 20 | [@Kartikey-Pathak](https://github.com/Kartikey-Pathak) | 20 | 0 | 1 | 2 |
+| 18 | [@Kartikey-Pathak](https://github.com/Kartikey-Pathak) | 22 | 1 | 1 | 2 |
+| 19 | [@Mudita-Singh](https://github.com/Mudita-Singh) | 22 | 1 | 1 | 2 |
+| 20 | [@pratiyushraj007-Dev](https://github.com/pratiyushraj007-Dev) | 21 | 3 | 1 | 1 |
 | 21 | [@Mradul-0605](https://github.com/Mradul-0605) | 20 | 0 | 1 | 2 |
 | 22 | [@Samirahs08](https://github.com/Samirahs08) | 19 | 2 | 1 | 1 |
 | 23 | [@suryagkp2007-cmyk](https://github.com/suryagkp2007-cmyk) | 19 | 2 | 1 | 1 |
@@ -67,6 +67,7 @@ Last updated: 2026-05-24
 | 51 | [@Soumipal56](https://github.com/Soumipal56) | 5 | 0 | 0 | 1 |
 | 52 | [@srisha4](https://github.com/srisha4) | 5 | 0 | 0 | 1 |
 | 53 | [@stuti-sudo-123](https://github.com/stuti-sudo-123) | 5 | 0 | 0 | 1 |
-| 54 | [@Suhani-ai-dev](https://github.com/Suhani-ai-dev) | 5 | 0 | 0 | 1 |
-| 55 | [@SupriyaShirsat05](https://github.com/SupriyaShirsat05) | 5 | 0 | 0 | 1 |
-| 56 | [@varsha-2503](https://github.com/varsha-2503) | 5 | 0 | 0 | 1 |
+| 54 | [@Subha12125](https://github.com/Subha12125) | 5 | 0 | 0 | 1 |
+| 55 | [@Suhani-ai-dev](https://github.com/Suhani-ai-dev) | 5 | 0 | 0 | 1 |
+| 56 | [@SupriyaShirsat05](https://github.com/SupriyaShirsat05) | 5 | 0 | 0 | 1 |
+| 57 | [@varsha-2503](https://github.com/varsha-2503) | 5 | 0 | 0 | 1 |

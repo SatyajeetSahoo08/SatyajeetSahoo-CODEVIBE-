@@ -24,7 +24,7 @@ const Courses = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [wishlist, setWishlist] = useState([]);
   const [animatingId, setAnimatingId] = useState(null);
-  const [showWishlistOnly, setShowWishlistOnly] = useState(false); // New state for filter
+  const [showWishlistOnly, setShowWishlistOnly] = useState(false);
 
   useEffect(() => {
     const loggedInUser = localStorage.getItem('user');
@@ -45,12 +45,7 @@ const Courses = () => {
         ? prev.filter(t => t !== courseTitle)
         : [...prev, courseTitle];
       localStorage.setItem('codevibe_wishlist', JSON.stringify(updated));
-      
-      // Auto-turn off wishlist filter if the wishlist becomes empty
-      if (updated.length === 0) {
-        setShowWishlistOnly(false);
-      }
-      
+      if (updated.length === 0) setShowWishlistOnly(false);
       return updated;
     });
   };
@@ -153,8 +148,7 @@ const Courses = () => {
   const filteredCourses = courses.filter((course) => {
     const matchesSearch = course.title.toLowerCase().includes(search.toLowerCase());
     const matchesCategory = selectedCategory === 'All' || course.category === selectedCategory;
-    const matchesWishlist = showWishlistOnly ? wishlist.includes(course.title) : true;
-    
+    const matchesWishlist = !showWishlistOnly || wishlist.includes(course.title);
     return matchesSearch && matchesCategory && matchesWishlist;
   });
 
@@ -185,25 +179,16 @@ const Courses = () => {
 
       {/* Welcome Banner */}
       {user && (
-        <div
-          style={{
-            background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)',
-            borderRadius: '16px',
-            padding: '20px 32px',
-            marginTop: '20px',
-            marginBottom: '32px',
-            textAlign: 'center',
-            border: '1px solid rgba(255,255,255,0.1)',
-          }}
-        >
-          <h2
-            style={{
-              color: 'white',
-              margin: 0,
-              fontSize: '1.8rem',
-              fontWeight: '500',
-            }}
-          >
+        <div style={{
+          background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)',
+          borderRadius: '16px',
+          padding: '20px 32px',
+          marginTop: '20px',
+          marginBottom: '32px',
+          textAlign: 'center',
+          border: '1px solid rgba(255,255,255,0.1)',
+        }}>
+          <h2 style={{ color: 'white', margin: 0, fontSize: '1.8rem', fontWeight: '500' }}>
             Welcome back, {user.username || user.name || 'User'}! 👋
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.7)', marginTop: '8px', marginBottom: 0 }}>
@@ -213,63 +198,52 @@ const Courses = () => {
       )}
 
       {/* Header Section */}
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          flexWrap: 'wrap',
-          gap: '20px',
-          marginBottom: '32px',
-          marginTop: user ? '0' : '32px',
-        }}
-      >
-        <h2
-          style={{
-            color: 'white',
-            fontSize: '2rem',
-            margin: 0,
-            fontWeight: '600',
-          }}
-        >
+      <div style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        flexWrap: 'wrap',
+        gap: '20px',
+        marginBottom: '32px',
+        marginTop: user ? '0' : '32px',
+      }}>
+        <h2 style={{ color: 'white', fontSize: '2rem', margin: 0, fontWeight: '600' }}>
           📚 Available Courses
         </h2>
 
         {/* Wishlist Count Badge */}
         {wishlist.length > 0 && (
-          <button 
+          <button
             onClick={() => setShowWishlistOnly(!showWishlistOnly)}
             style={{
               display: 'flex',
               alignItems: 'center',
               gap: '8px',
-              background: showWishlistOnly ? '#ff4b6e' : 'rgba(255,75,110,0.15)',
+              background: showWishlistOnly ? 'rgba(255,75,110,0.2)' : 'rgba(255,75,110,0.1)',
               border: '1px solid rgba(255,75,110,0.3)',
               borderRadius: '30px',
               padding: '8px 18px',
-              color: showWishlistOnly ? 'white' : '#ff4b6e',
+              color: '#ff4b6e',
               fontSize: '0.9rem',
               fontWeight: '500',
               cursor: 'pointer',
               transition: 'all 0.3s ease',
             }}
           >
-            <FaHeart size={14} color={showWishlistOnly ? "white" : "#ff4b6e"} />
-            {wishlist.length} Wishlisted
+            <FaHeart size={14} color="#ff4b6e" />
+            {showWishlistOnly ? 'Show All' : `Wishlist (${wishlist.length})`}
           </button>
         )}
       </div>
 
       {/* Category Filter Buttons */}
-      <div
-        style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          gap: '12px',
-          marginBottom: '32px',
-          justifyContent: 'center',
-        }}
-      >
+      <div style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        gap: '12px',
+        marginBottom: '32px',
+        justifyContent: 'center',
+      }}>
         {categories.map((category) => (
           <button
             key={category}
@@ -346,38 +320,29 @@ const Courses = () => {
               }}
             >
               {/* Level Badge */}
-              <div
-                style={{
-                  position: 'absolute',
-                  top: '16px',
-                  right: '16px',
-                  zIndex: 1,
-                }}
-              >
-                <span
-                  style={{
-                    background: getLevelBadge(course.level).bg,
-                    color: getLevelBadge(course.level).text,
-                    padding: '4px 12px',
-                    borderRadius: '20px',
-                    fontSize: '0.7rem',
-                    fontWeight: '600',
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.5px',
-                  }}
-                >
+              <div style={{ position: 'absolute', top: '16px', right: '16px', zIndex: 1 }}>
+                <span style={{
+                  background: getLevelBadge(course.level).bg,
+                  color: getLevelBadge(course.level).text,
+                  padding: '4px 12px',
+                  borderRadius: '20px',
+                  fontSize: '0.7rem',
+                  fontWeight: '600',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.5px',
+                }}>
                   {course.level}
                 </span>
               </div>
 
-              {/* 🔖 Wishlist Bookmark Button */}
+              {/* 🔖 Bookmark Button */}
               <button
                 onClick={(e) => toggleWishlist(e, course.title)}
                 title={wishlist.includes(course.title) ? "Remove from wishlist" : "Add to wishlist"}
                 style={{
                   position: 'absolute',
-                  top: '10px',
-                  left: '13px',
+                  top: '12px',
+                  left: '16px',
                   zIndex: 2,
                   background: 'none',
                   border: 'none',
@@ -385,14 +350,14 @@ const Courses = () => {
                   cursor: 'pointer',
                   animation: animatingId === course.title ? 'heartPop 0.4s ease' : 'none',
                   filter: wishlist.includes(course.title)
-                    ? 'drop-shadow(0 2px 4px rgba(255,75,110,0.6))'
+                    ? 'drop-shadow(0 2px 6px rgba(255,75,110,0.6))'
                     : 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))',
                   transition: 'all 0.3s ease',
                 }}
               >
                 <svg
                   width="24"
-                  height="30"
+                  height="32"
                   viewBox="0 0 24 32"
                   fill={wishlist.includes(course.title) ? "#ff4b6e" : "rgba(255,255,255,0.15)"}
                   stroke={wishlist.includes(course.title) ? "#ff4b6e" : "rgba(255,255,255,0.4)"}
@@ -404,89 +369,48 @@ const Courses = () => {
               </button>
 
               {/* Image */}
-              <div
-                style={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  marginBottom: '20px',
-                  marginTop: '8px',
-                }}
-              >
+              <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                marginBottom: '20px',
+                marginTop: '8px',
+              }}>
                 <img
                   src={course.img}
                   alt={course.title}
                   loading="lazy"
                   className="course-img"
-                  style={{
-                    width: "100%",
-                    maxWidth: "80px",
-                    height: "80px",
-                    objectFit: "contain",
-                  }}
+                  style={{ width: "100%", maxWidth: "80px", height: "80px", objectFit: "contain" }}
                 />
               </div>
 
               {/* Title */}
-              <h3
-                style={{
-                  color: 'white',
-                  fontSize: '1.4rem',
-                  margin: '0 0 8px 0',
-                  fontWeight: '600',
-                  textAlign: 'center',
-                }}
-              >
+              <h3 style={{ color: 'white', fontSize: '1.4rem', margin: '0 0 8px 0', fontWeight: '600', textAlign: 'center' }}>
                 {course.title}
               </h3>
 
               {/* Category Chip */}
-              <div
-                style={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  marginBottom: '8px',
-                }}
-              >
-                <span
-                  style={{
-                    background: 'rgba(255,255,255,0.08)',
-                    color: 'rgba(255,255,255,0.6)',
-                    padding: '2px 10px',
-                    borderRadius: '15px',
-                    fontSize: '0.7rem',
-                  }}
-                >
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '8px' }}>
+                <span style={{
+                  background: 'rgba(255,255,255,0.08)',
+                  color: 'rgba(255,255,255,0.6)',
+                  padding: '2px 10px',
+                  borderRadius: '15px',
+                  fontSize: '0.7rem',
+                }}>
                   {course.category}
                 </span>
               </div>
 
-              <div
-                style={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  gap: '6px',
-                  marginBottom: '12px',
-                }}
-              >
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '6px', marginBottom: '12px' }}>
                 <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.8rem' }}>
                   📖 {course.duration}
                 </span>
               </div>
 
               {/* Description */}
-              <p
-                style={{
-                  color: 'rgba(255,255,255,0.7)',
-                  fontSize: '0.9rem',
-                  lineHeight: '1.5',
-                  textAlign: 'center',
-                  margin: '0 0 20px 0',
-                  flex: 1,
-                }}
-              >
+              <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.9rem', lineHeight: '1.5', textAlign: 'center', margin: '0 0 20px 0', flex: 1 }}>
                 {course.desc}
               </p>
 
@@ -523,13 +447,15 @@ const Courses = () => {
       ) : (
         <EmptyState
           icon={<FaBookOpen />}
-          title="No Courses Found"
-          description="We couldn't find any courses matching your selected category or search query. Try exploring other categories to continue learning."
+          title={showWishlistOnly ? "No Wishlisted Courses" : "No Courses Found"}
+          description={showWishlistOnly
+            ? "You haven't bookmarked any courses yet. Click the bookmark icon on any course to save it!"
+            : "We couldn't find any courses matching your selected category or search query."}
           buttonText="Show All Courses"
           onButtonClick={() => {
             setSelectedCategory("All");
             setSearch("");
-            setShowWishlistOnly(false); // Reset wishlist filter
+            setShowWishlistOnly(false);
           }}
         />
       )}

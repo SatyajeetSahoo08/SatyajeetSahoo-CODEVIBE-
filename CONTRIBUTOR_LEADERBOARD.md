@@ -1,6 +1,6 @@
 # Contributor Leaderboard
 
-This leaderboard is generated automatically for `jagrati7305/CODEVIBE-` by GitHub Actions.
+This leaderboard is generated automatically for `JiyaBatra/CODEVIBE-` by GitHub Actions.
 
 Last updated: 2026-05-31
 
@@ -29,23 +29,23 @@ Last updated: 2026-05-31
 | 13 | [@codedbydollys10](https://github.com/codedbydollys10) | 51 | 13 | 2 | 1 |
 | 14 | [@Haritha-054](https://github.com/Haritha-054) | 49 | 2 | 2 | 5 |
 | 15 | [@riteshpatil9686-lgtm](https://github.com/riteshpatil9686-lgtm) | 47 | 11 | 2 | 1 |
-| 16 | [@Smrithi-krishna](https://github.com/Smrithi-krishna) | 46 | 8 | 2 | 2 |
-| 17 | [@ArshiBansal](https://github.com/ArshiBansal) | 45 | 5 | 2 | 3 |
-| 18 | [@theblag](https://github.com/theblag) | 44 | 2 | 2 | 4 |
-| 19 | [@YashvardhanJani](https://github.com/YashvardhanJani) | 42 | 6 | 2 | 2 |
-| 20 | [@advikdivekar](https://github.com/advikdivekar) | 40 | 5 | 3 | 0 |
-| 21 | [@Saubhagya1621](https://github.com/Saubhagya1621) | 38 | 4 | 2 | 2 |
-| 22 | [@sashatakpere](https://github.com/sashatakpere) | 36 | 3 | 2 | 2 |
-| 23 | [@suryagkp2007-cmyk](https://github.com/suryagkp2007-cmyk) | 36 | 3 | 2 | 2 |
-| 24 | [@Tech4Aditya](https://github.com/Tech4Aditya) | 36 | 3 | 2 | 2 |
-| 25 | [@shivani11jadhav](https://github.com/shivani11jadhav) | 35 | 0 | 2 | 3 |
-| 26 | [@alenalex-009](https://github.com/alenalex-009) | 34 | 2 | 2 | 2 |
-| 27 | [@RehanAhmad25](https://github.com/RehanAhmad25) | 34 | 2 | 2 | 2 |
-| 28 | [@Siddh2024](https://github.com/Siddh2024) | 34 | 2 | 1 | 4 |
-| 29 | [@thedaripanator](https://github.com/thedaripanator) | 34 | 2 | 2 | 2 |
-| 30 | [@indresh404](https://github.com/indresh404) | 32 | 6 | 1 | 2 |
-| 31 | [@NarraMounika](https://github.com/NarraMounika) | 32 | 1 | 1 | 4 |
-| 32 | [@jagrati7305](https://github.com/jagrati7305) | 31 | 3 | 2 | 1 |
+| 16 | [@jagrati7305](https://github.com/jagrati7305) | 46 | 3 | 3 | 2 |
+| 17 | [@Smrithi-krishna](https://github.com/Smrithi-krishna) | 46 | 8 | 2 | 2 |
+| 18 | [@ArshiBansal](https://github.com/ArshiBansal) | 45 | 5 | 2 | 3 |
+| 19 | [@theblag](https://github.com/theblag) | 44 | 2 | 2 | 4 |
+| 20 | [@YashvardhanJani](https://github.com/YashvardhanJani) | 42 | 6 | 2 | 2 |
+| 21 | [@advikdivekar](https://github.com/advikdivekar) | 40 | 5 | 3 | 0 |
+| 22 | [@Saubhagya1621](https://github.com/Saubhagya1621) | 38 | 4 | 2 | 2 |
+| 23 | [@sashatakpere](https://github.com/sashatakpere) | 36 | 3 | 2 | 2 |
+| 24 | [@suryagkp2007-cmyk](https://github.com/suryagkp2007-cmyk) | 36 | 3 | 2 | 2 |
+| 25 | [@Tech4Aditya](https://github.com/Tech4Aditya) | 36 | 3 | 2 | 2 |
+| 26 | [@shivani11jadhav](https://github.com/shivani11jadhav) | 35 | 0 | 2 | 3 |
+| 27 | [@alenalex-009](https://github.com/alenalex-009) | 34 | 2 | 2 | 2 |
+| 28 | [@RehanAhmad25](https://github.com/RehanAhmad25) | 34 | 2 | 2 | 2 |
+| 29 | [@Siddh2024](https://github.com/Siddh2024) | 34 | 2 | 1 | 4 |
+| 30 | [@thedaripanator](https://github.com/thedaripanator) | 34 | 2 | 2 | 2 |
+| 31 | [@indresh404](https://github.com/indresh404) | 32 | 6 | 1 | 2 |
+| 32 | [@NarraMounika](https://github.com/NarraMounika) | 32 | 1 | 1 | 4 |
 | 33 | [@savniagrawal1701](https://github.com/savniagrawal1701) | 29 | 7 | 1 | 1 |
 | 34 | [@sujitha-kotyada](https://github.com/sujitha-kotyada) | 29 | 2 | 1 | 3 |
 | 35 | [@tazmeen24](https://github.com/tazmeen24) | 29 | 7 | 1 | 1 |

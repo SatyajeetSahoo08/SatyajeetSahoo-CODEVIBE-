@@ -4,6 +4,7 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import API_BASE_URL from "../config/api";
 import registerImage from "../assets/registerImage.png";
 import PasswordField from "./PasswordField";
+import Dropdown from "./common/Dropdown";
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -134,34 +135,23 @@ const Signup = () => {
               YEAR:
             </label>
 
-            <select
-              id="year"
-              name="year"
+            <Dropdown
               value={formData.year}
-              onChange={handleChange}
-              required
-            >
-              <option value="">
-                Select Year
-              </option>
-
-              <option value="1st Year">
-                1st Year
-              </option>
-
-              <option value="2nd Year">
-                2nd Year
-              </option>
-
-              <option value="3rd Year">
-                3rd Year
-              </option>
-
-              <option value="4th Year">
-                4th Year
-              </option>
-
-            </select>
+              onChange={(val) => setFormData({ ...formData, year: val })}
+              options={["1st Year", "2nd Year", "3rd Year", "4th Year"]}
+              placeholder="Select Year"
+              style={{ width: "100%" }}
+              triggerStyle={{
+                padding: "1rem",
+                borderRadius: "4px",
+                border: "2px solid var(--primary-red)",
+                background: "#0f1419",
+                color: formData.year ? "var(--text-primary)" : "#666",
+                fontSize: "1rem",
+                width: "100%",
+                textAlign: "left"
+              }}
+            />
 
             {/* Email */}
             <label htmlFor="email">

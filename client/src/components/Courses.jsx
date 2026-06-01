@@ -109,6 +109,31 @@ const Courses = () => {
           50% { transform: scale(1.5); }
           100% { transform: scale(1); }
         }
+        .filter-btn {
+          padding: 8px 20px;
+          border-radius: 30px;
+          font-size: 0.9rem;
+          font-weight: 500;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          background: rgba(255, 255, 255, 0.05);
+          color: white;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .filter-btn:hover {
+          background: rgba(255, 255, 255, 0.15);
+          border-color: rgba(255, 255, 255, 0.2);
+        }
+        .filter-btn.active {
+          background: rgba(255, 75, 110, 0.2);
+          color: #ff4b6e;
+          border: 1px solid rgba(255, 75, 110, 0.5);
+          box-shadow: 0 0 12px rgba(255, 75, 110, 0.3);
+        }
+        .filter-btn.active:hover {
+          background: rgba(255, 75, 110, 0.3);
+          border-color: rgba(255, 75, 110, 0.7);
+        }
       `}</style>
 
       {user && (
@@ -180,19 +205,7 @@ const Courses = () => {
           <button
             key={category}
             onClick={() => setSelectedCategory(category)}
-            style={{
-              padding: '8px 20px',
-              borderRadius: '30px',
-              fontSize: '0.9rem',
-              fontWeight: '500',
-              cursor: 'pointer',
-              transition: 'all 0.3s ease',
-              background: selectedCategory === category ? 'rgba(255,255,255,0.2)' : 'rgba(255,255,255,0.05)',
-              color: 'white',
-              border: selectedCategory === category ? '1px solid rgba(255,255,255,0.3)' : '1px solid rgba(255,255,255,0.1)',
-            }}
-            onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.15)'; }}
-            onMouseLeave={(e) => { if (selectedCategory !== category) e.currentTarget.style.background = 'rgba(255,255,255,0.05)'; }}
+            className={`filter-btn ${selectedCategory === category ? 'active' : ''}`}
           >
             {category}
           </button>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Dropdown from "./common/Dropdown";
 
 const projectData = {
   Beginner: [
@@ -100,26 +101,20 @@ const ProjectSuggestions = () => {
           marginBottom: "40px",
         }}
       >
-        <select
+        <Dropdown
           value={level}
-          onChange={(e) => setLevel(e.target.value)}
-          style={{
+          onChange={setLevel}
+          options={["Beginner", "Intermediate", "Advanced"]}
+          placeholder="Select Level"
+          style={{ minWidth: "250px" }}
+          triggerStyle={{
             padding: "14px 18px",
             borderRadius: "12px",
             background: "rgba(255,255,255,0.08)",
             color: level === "" ? "rgba(255,255,255,0.7)" : "white",
             border: "1px solid rgba(255,255,255,0.15)",
-            outline: "none",
-            minWidth: "250px",
-            fontSize: "1rem",
-            cursor: "pointer",
           }}
-        >
-          <option value="" style={{ color: "black" }}>Select Level</option>
-          <option value="Beginner" style={{ color: "black" }}>Beginner</option>
-          <option value="Intermediate" style={{ color: "black" }}>Intermediate</option>
-          <option value="Advanced" style={{ color: "black" }}>Advanced</option>
-        </select>
+        />
       </div>
 
       {/* Project Cards Grid */}

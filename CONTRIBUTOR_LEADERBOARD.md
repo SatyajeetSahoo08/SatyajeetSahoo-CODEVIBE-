@@ -21,10 +21,10 @@ Last updated: 2026-06-01
 | 5 | [@Aayuiiitmg](https://github.com/Aayuiiitmg) | 104 | 12 | 8 | 0 |
 | 6 | [@namrarafique93-del](https://github.com/namrarafique93-del) | 97 | 11 | 5 | 5 |
 | 7 | [@KGFCH2](https://github.com/KGFCH2) | 87 | 1 | 1 | 15 |
-| 8 | [@pranav-cholleti](https://github.com/pranav-cholleti) | 86 | 18 | 3 | 4 |
-| 9 | [@DebasmitaBose0](https://github.com/DebasmitaBose0) | 80 | 0 | 0 | 16 |
-| 10 | [@StarDustNova-57](https://github.com/StarDustNova-57) | 75 | 5 | 4 | 5 |
-| 11 | [@Saubhagya1621](https://github.com/Saubhagya1621) | 72 | 6 | 4 | 4 |
+| 8 | [@Saubhagya1621](https://github.com/Saubhagya1621) | 87 | 6 | 5 | 5 |
+| 9 | [@pranav-cholleti](https://github.com/pranav-cholleti) | 86 | 18 | 3 | 4 |
+| 10 | [@DebasmitaBose0](https://github.com/DebasmitaBose0) | 80 | 0 | 0 | 16 |
+| 11 | [@StarDustNova-57](https://github.com/StarDustNova-57) | 75 | 5 | 4 | 5 |
 | 12 | [@divyagsharma2006-blip](https://github.com/divyagsharma2006-blip) | 65 | 5 | 4 | 3 |
 | 13 | [@vasheekhan](https://github.com/vasheekhan) | 60 | 5 | 3 | 4 |
 | 14 | [@codedbydollys10](https://github.com/codedbydollys10) | 51 | 13 | 2 | 1 |

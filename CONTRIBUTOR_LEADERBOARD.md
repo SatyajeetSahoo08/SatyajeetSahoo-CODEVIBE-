@@ -2,7 +2,7 @@
 
 This leaderboard is generated automatically for `SatyajeetSahoo08/SatyajeetSahoo-CODEVIBE-` by GitHub Actions.
 
-Last updated: 2026-08-27
+Last updated: 2026-08-28
 
 ## Scoring
 
@@ -16,7 +16,7 @@ Last updated: 2026-08-27
 | --- | --- | ---: | ---: | ---: | ---: |
 | 1 | [@pranav-cholleti](https://github.com/pranav-cholleti) | 36 | 18 | 0 | 0 |
 | 2 | [@codedbydollys10](https://github.com/codedbydollys10) | 26 | 13 | 0 | 0 |
-| 3 | [@Aayuiiitmg](https://github.com/Aayuiiitmg) | 24 | 12 | 0 | 0 |
+| 3 | [@aayuxsh326](https://github.com/aayuxsh326) | 24 | 12 | 0 | 0 |
 | 4 | [@namrarafique93-del](https://github.com/namrarafique93-del) | 22 | 11 | 0 | 0 |
 | 5 | [@riteshpatil9686-lgtm](https://github.com/riteshpatil9686-lgtm) | 22 | 11 | 0 | 0 |
 | 6 | [@Dhruvil20060](https://github.com/Dhruvil20060) | 16 | 8 | 0 | 0 |
